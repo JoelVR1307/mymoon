@@ -114,10 +114,10 @@
             text-align: center;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             width: 80%;
-            max-width: 350px;
+            max-width: 300px;
         }
         .modal img {
-            width: 150px;
+            width: 120px;
         }
         .modal button {
             background-color: #d32f2f;
@@ -183,18 +183,19 @@
         <footer>💕 Para mi amor eterno 💕</footer>
     </div>
     
-    <div id="modal" class="modal">
-        <h2 style="color: black; font-weight: bold;">🎁 ¡Tu regalo especial está en camino! 🎁</h2>
-        <img src="./img/regalo.gif" alt="Regalo sorpresa">
-        <p style="color: black;">💕 ¡Espero que te encante! 💕</p>
-        <button onclick="closeModal()">Cerrar</button>
-    </div>
+    
     <div class="container">
         <div class="gif-container2">
             <img src="./img/amor.jpeg" alt="Gatito amoroso">
         </div>
     </div>
     <div id="heartsContainer"></div>
+    <div id="modal" class="modal">
+        <h2 style="color: black; font-weight: bold;">🎁 ¡Tu regalo especial está en camino! 🎁</h2>
+        <img src="./img/regalo.gif" alt="Regalo sorpresa">
+        <p style="color: black;">💕 ¡Espero que te encante! 💕</p>
+        <button onclick="closeModal()">Cerrar</button>
+    </div>
     <script>
         // Función para verificar la fecha
         function checkDate() {
@@ -217,7 +218,7 @@
         // Función para crear corazones flotantes
         function createHearts() {
             const container = document.getElementById('heartsContainer');
-            for (let i = 0; i < 30; i++) {
+            for (let i = 0; i < 15; i++) {
                 const heart = document.createElement('div');
                 heart.className = 'heart';
                 heart.innerHTML = '❤️';
